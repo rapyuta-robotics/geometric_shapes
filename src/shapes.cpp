@@ -339,7 +339,7 @@ void Mesh::scaleAndPadd(double scale, double padding)
       double fact = scale + padding / norm;
       vertices[i3] = sx + dx * fact;
       vertices[i3 + 1] = sy + dy * fact;
-      vertices[i3 + 2] = sz + dz * fact;
+      //vertices[i3 + 2] = sz + dz * fact;
     }
     else
     {
@@ -348,7 +348,7 @@ void Mesh::scaleAndPadd(double scale, double padding)
       double ndz = ((dz > 0) ? dz + padding : dz - padding);
       vertices[i3] = sx + ndx;
       vertices[i3 + 1] = sy + ndy;
-      vertices[i3 + 2] = sz + ndz;
+      //vertices[i3 + 2] = sz + ndz;
     }
   }
 }
