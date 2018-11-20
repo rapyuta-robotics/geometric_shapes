@@ -290,7 +290,7 @@ void Sphere::scaleAndPadd(double scale, double padding)
 void Cylinder::scaleAndPadd(double scale, double padding)
 {
   radius = radius * scale + padding;
-  //length = length * scale + 2.0 * padding;
+  length = length * scale + 2.0 * padding;
 }
 
 void Cone::scaleAndPadd(double scale, double padding)
